@@ -1,0 +1,24 @@
+{
+  "name": "mono-repo-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "components/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "fix": "turbo run fix"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "npm@8.19.3"
+}
